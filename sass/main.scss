@@ -1,0 +1,25 @@
+// utils styles
+@import './utils/variables';
+@import './utils/visually__hidden';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components styles
+@import './components/section';
+@import './components/container';
+@import './components/typography';
+@import './components/logotype';
+@import './components/modal';
+@import './components/.backdrop';
+
+// loyaut
+@import './loyaut/header';
+@import './loyaut/hero';
+@import './loyaut/benefits';
+@import './loyaut/case';
+@import './loyaut/team';
+@import './loyaut/clients';
+@import './loyaut/footer';
+@import './loyaut/portfolio';

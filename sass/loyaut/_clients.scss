@@ -1,0 +1,35 @@
+.clients {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients__item {
+    width: 170px;
+    height: 92px;
+}
+
+.clients__link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-property: border, color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        }
+}
+
+.clients__icon {
+    fill: currentColor;
+}
