@@ -1,10 +1,17 @@
 .benefits__list {
-    display: flex;
-    justify-content: space-between;
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+    // 
 }
 
-.benefits__item {
-    width: 270px;
+.benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  
+
+    // width: 270px
 }
 
 .benefits__icon-wrapper {
@@ -27,7 +34,11 @@
 }
 
 .benefits__descripnion {
-    width: 270px;
+    // width: 270px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }

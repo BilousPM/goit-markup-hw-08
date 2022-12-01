@@ -1,8 +1,11 @@
 .clients {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 30px;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            gap: 30px;
+        }
+
 }
 
 .clients__item {

@@ -1,3 +1,10 @@
+@media screen and (max-width: 1200px) {
+    .case {
+        display: none;
+    }
+    
+}
+
 .case {
     padding-top: 0;
 }
@@ -6,15 +13,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 .case__item {
