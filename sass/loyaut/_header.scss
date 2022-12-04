@@ -5,6 +5,8 @@
 .header__container {
     display: flex;
     align-items: center;
+    padding: 10px 15px;
+
 }
 
 .nav {
@@ -18,9 +20,10 @@
 }
 
 .nav__list {
-    display: flex;
-    align-self: center;
-    gap: 50px;
+    display: none;
+    // display: flex;
+    // align-self: center;
+    // gap: 50px;
 }
 
 .nav__link {
@@ -59,9 +62,10 @@
 }
 
 .contact {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // gap: 30px;
 }
 
 .contact__icon {
