@@ -5,8 +5,9 @@
 
     padding: 40px;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 610px;
+
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -14,6 +15,11 @@
 
     transform: translateX(-50%) translateY(-50%);
     transition: transorm, opasity var(--time) var(--cubic), var(--time) var(--cubic);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+        }
 }
 
 .modal__btn {

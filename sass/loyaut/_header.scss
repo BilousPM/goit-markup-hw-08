@@ -21,9 +21,12 @@
 
 .nav__list {
     display: none;
-    // display: flex;
-    // align-self: center;
-    // gap: 50px;
+
+    @media screen and ( min-width: 768px) {
+        display: flex;
+        align-self: center;
+        gap: 50px;
+    }
 }
 
 .nav__link {
@@ -63,9 +66,21 @@
 
 .contact {
     display: none;
-    // display: flex;
-    // align-items: center;
-    // gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: block;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+
+.contact__item {
+    margin-bottom: 10px;
 }
 
 .contact__icon {
@@ -86,5 +101,9 @@
     &:focus {
             color: var(--accent-color);
         }
+}
+
+.mobile-menu__curent {
+    color: var(--accent-color);
 }
 
