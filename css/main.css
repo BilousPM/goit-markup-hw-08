@@ -759,10 +759,8 @@ img {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer--container {
-    text-align: center;
-  }
+.footer--container {
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer--container {
@@ -772,6 +770,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -811,9 +810,12 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+.footer__wrapper--social {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .footer__wrapper--social {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -835,9 +837,12 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+.adress {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .adress {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -926,6 +931,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 15px 16px;
+  margin-bottom: 20px;
   outline: 1px solid transparent;
   outline-offset: -1px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -952,15 +958,15 @@ img {
   outline-color: var(--accent-color);
   color: var(--primary-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .form__input-fild {
     width: 450px;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form__input-fild {
     width: 357px;
+    margin-bottom: 0;
   }
 }
 
@@ -968,27 +974,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-}
-
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  margin-bottom: 40px;
+  gap: 8px;
 }
-
-.frame {
-  padding: 20px 24px;
-  width: 370;
-  border: 1px solid #eeeeee;
-  border-top: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter {
+    margin-bottom: 50px;
+  }
 }
 
 .button {
@@ -996,6 +998,7 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 6px 22px;
+  margin-bottom: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1027,6 +1030,61 @@ img {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.portfolio-items {
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow var(--time) var(--cubic);
+  transition: -webkit-box-shadow var(--time) var(--cubic);
+  transition: box-shadow var(--time) var(--cubic);
+  transition: box-shadow var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
+}
+@media screen and (max-width: 767px) {
+  .portfolio-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-items {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-items {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+.portfolio-items:hover, .portfolio-items:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-items:hover .overley-portfolio {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.frame {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .projekt-title {
@@ -1076,25 +1134,4 @@ img {
           transition-duration: var(--time);
   -webkit-transition-timing-function: var(--cubic);
           transition-timing-function: var(--cubic);
-}
-
-.portfolio-items:hover .overley-portfolio {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.portfolio-items {
-  cursor: pointer;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: -webkit-box-shadow var(--time) var(--cubic);
-  transition: -webkit-box-shadow var(--time) var(--cubic);
-  transition: box-shadow var(--time) var(--cubic);
-  transition: box-shadow var(--time) var(--cubic), -webkit-box-shadow var(--time) var(--cubic);
-}
-
-.portfolio-items:hover,
-.portfolio-items:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */
