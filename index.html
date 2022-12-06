@@ -192,10 +192,20 @@
             <li class="card__item">
               <img
                 class="card__img"
-                src="./images/photo-1.jpg"
+                srcset="
+                  ./images/team/img1_270@1x.jpg 270w,
+                  ./images/team/img1_354@1x.jpg 354w,
+                  ./images/team/img1_450@1x.jpg 450w,
+                  ./images/team/img1_270@2x.jpg 540w,
+                  ./images/team/img1_354@2x.jpg 708w,
+                  ./images/team/img1_450@2x.jpg 900w
+                "
+                sizes="(min-with: 1200px) 270px, (min-with: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img1_450@1x.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="card__wrapper">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
