@@ -2,10 +2,9 @@
     max-width: 1600px;
     margin: 0 auto;
     background-color: #2f303a;
-    padding: 200px 0;
+    padding: 118px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero/Hero_s@1x.jpg);
@@ -16,7 +15,6 @@
         url(../images/hero/Hero_s@2x.jpg);
     }
     
-
    @media screen and (min-width: 481px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero/Hero_m@1x.jpg);
@@ -29,7 +27,7 @@
         }
    }
 
-          @media screen and (min-width: 769px) {
+          @media screen and (min-width: 768px) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
           url(../images/hero/Hero_lg@1x.jpg);
       @media (min-device-pixel-ratio: 2),
@@ -37,6 +35,10 @@
       (min-resolution: 2dppx) {
           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
               url(../images/hero/Hero_lg@2x.jpg);
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding: 200px 0;
       }
   }
 }
