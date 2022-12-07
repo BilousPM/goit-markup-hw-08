@@ -554,7 +554,8 @@ img {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
-.nav__link .nav__link--current::after {
+
+.nav__link--current::after {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -564,19 +565,21 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-.nav__link .nav__link--current {
+
+.nav__link--current {
   color: var(--accent-color);
 }
-.nav__link .contact {
+
+.contact {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .nav__link .contact {
+  .contact {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .nav__link .contact {
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -586,16 +589,18 @@ img {
     gap: 30px;
   }
 }
+
 @media screen and (max-width: 1199px) {
-  .nav__link .contact__item:not(:last-child) {
+  .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
-.nav__link .contact__icon {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.nav__link .contact__link {
+
+.contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,7 +614,7 @@ img {
   -webkit-transition: color var(--time) var(--cubic);
   transition: color var(--time) var(--cubic);
 }
-.nav__link .contact__link:hover, .nav__link .contact__link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 

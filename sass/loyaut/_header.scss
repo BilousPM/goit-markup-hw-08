@@ -43,6 +43,7 @@
     &:focus {
     color: var(--accent-color);
     }
+}
 
 .nav__link--current::after {
     position: absolute;
@@ -103,6 +104,6 @@
     &:focus {
             color: var(--accent-color);
         }
-}}
+}
 
 
