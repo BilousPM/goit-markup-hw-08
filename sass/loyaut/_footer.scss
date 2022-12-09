@@ -41,6 +41,14 @@
     }
 }
 
+.footer__wrapper--adress {
+    margin-bottom: 60px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+}
+
 .footer__wrapper--social {
     margin-bottom: 60px;
 
@@ -59,12 +67,12 @@
     }
 }
 
-.adress {
-    margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-       margin-bottom: 0; 
-    }
-}
+// .adress {
+//     margin-bottom: 60px;
+//     @media screen and (min-width: 1200px) {
+//        margin-bottom: 0; 
+//     }
+// }
 
 .adress__list {
     display: flex;

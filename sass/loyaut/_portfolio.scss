@@ -27,7 +27,7 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: calc(26/16);
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -51,13 +51,15 @@
 
 .portfolio-list {
     @media screen and (min-width: 768px) {
-       display: flex;
+      display: flex;
       flex-wrap: wrap;
       margin: -15px;
       }
 }
 
 .portfolio-items {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   box-shadow: none;
   transition: box-shadow var(--time) var(--cubic);
@@ -90,6 +92,9 @@
 }
 
 .frame {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

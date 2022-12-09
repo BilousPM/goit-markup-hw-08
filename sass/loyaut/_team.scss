@@ -87,3 +87,9 @@
             color: #ffffff;
         }
 }
+
+.benefits__subtitle {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
