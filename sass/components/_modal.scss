@@ -134,7 +134,7 @@
 
     &:focus {
         outline-color: var(--accent-color);
-        }
+        }    
 }
 
 .consent {
@@ -149,7 +149,13 @@
 
     @media screen and (min-width: 480px) {
         align-items: center;
-        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+
+
 }
 
 .consent__checkbox {
